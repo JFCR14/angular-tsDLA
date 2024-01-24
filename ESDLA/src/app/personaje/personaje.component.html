@@ -1,0 +1,13 @@
+<div *ngFor="let personaje of personajes">
+    {{personaje.nombre}}
+    <button (click)="onSelect(personaje)">Seleccionar</button>
+</div>
+<div>
+    <div *ngIf="personajeSel">
+        <label>
+            nombre:
+            <input type="text" [(ngModel)]="personajeSel.nombre">
+
+        </label>
+    </div>
+</div>
